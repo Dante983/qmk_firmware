@@ -132,7 +132,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_LOWER] = LAYOUT(
               RGB_TOG,  KC_TRNS,  KC_TRNS,  KC_TRNS,  RGB_SAD,  RGB_HUD,  RGB_HUI,  RGB_SAI,    KC_TRNS,    KC_TRNS,  RGB_VAD,  RGB_VAI,
               KC_GRAVE, KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,    KC_TRNS,    KC_TRNS,  KC_TRNS, KC_EQUAL,
-    KC_NLCK,  KC_TILD,  KC_EXLM,  KC_AT,    KC_HASH,  KC_DLR,   KC_PERC,  KC_CIRC,  KC_AMPR,    KC_ASTR,    KC_LPRN,  KC_RPRN,  KC_BSPC,
+    KC_NUM,   KC_TILD,  KC_EXLM,  KC_AT,    KC_HASH,  KC_DLR,   KC_PERC,  KC_CIRC,  KC_AMPR,    KC_ASTR,    KC_LPRN,  KC_RPRN,  KC_BSPC,
     KC_HOME,  KC_DEL,   KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_UNDS,    KC_PLUS,    KC_LCBR,  KC_RCBR,  KC_PIPE,
     KC_TRNS,  _______,  KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12,   S(KC_NUHS), S(KC_NUBS), KC_HOME,  KC_END,   _______,
     KC_END,   _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,    KC_MNXT,    KC_VOLD,  KC_VOLU,  KC_MPLY
@@ -156,7 +156,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_RAISE] = LAYOUT(
               RGB_TOG,  KC_TRNS,  KC_TRNS,  KC_TRNS,  RGB_SAD,  RGB_HUD,  RGB_HUI,  RGB_SAI,  KC_TRNS,  KC_TRNS,  RGB_VAD,  RGB_VAI,
               KC_GRAVE, KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS, KC_EQUAL,
-    KC_NLCK,  KC_GRV,   KC_1,     KC_2,     KC_3,     KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     KC_BSPC,
+    KC_NUM,   KC_GRV,   KC_1,     KC_2,     KC_3,     KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     KC_BSPC,
     KC_HOME,  KC_DEL,   KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_MINS,  KC_EQL,   KC_LBRC,  KC_RBRC,  KC_BSLS,
     KC_TRNS,  _______,  KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12,   KC_NUHS,  KC_NUBS,  KC_PGUP,  KC_PGDN,  _______,
     KC_END,   _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  KC_MNXT,  KC_VOLD,  KC_VOLU,  KC_MPLY
@@ -196,7 +196,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * ,------|------+------+------+------+------+------+------+------+------+------+------+------|
    * | PgUp |      |      |MUSmod|Aud on|Audoff|AGnorm|AGswap|Qwerty|Colemk|Dvorak|Plover|      |
    * |------|------+------+------+------+------+------+------+------+------+------+------+------|
-   * | Home |      |Voice-|Voice+|Mus on|Musoff|MIDIon|MIDIof|TermOn|TermOf|      |      |      |
+   * | Home |      |Voice-|Voice+|Mus on|Musoff|MIDIon|MIDIof|      |      |      |      |      |
    * |------|------+------+------+------+------+------+------+------+------+------+------+------|
    * | PgDn |      |      |      |      |      |             |      |      |      |      |      |
    * `------------------------------------------------------------------------------------------'
@@ -206,7 +206,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
               KC_ESC,    KC_1,     KC_2,     KC_3,     KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,      KC_0,    KC_MINUS,
     KC_NO,    _______,   QK_BOOT,  DEBUG,    RGB_TOG,  RGB_MOD,  RGB_HUI,  RGB_HUD,  RGB_SAI,  RGB_SAD,  RGB_VAI,   RGB_VAD,  KC_DEL ,
     KC_PGUP,  _______,   _______,  MU_MOD,   AU_ON,    AU_OFF,   AG_NORM,  AG_SWAP,  QWERTY,   COLEMAK,  DVORAK,    PLOVER,   _______,
-    KC_HOME,  _______,   MUV_DE,   MUV_IN,   MU_ON,    MU_OFF,   MI_ON,    MI_OFF,   TERM_ON,  TERM_OFF, _______,   _______,  _______,
+    KC_HOME,  _______,   MUV_DE,   MUV_IN,   MU_ON,    MU_OFF,   MI_ON,    MI_OFF,   _______,  _______,  _______,   _______,  _______,
     KC_PGDN,  _______,   _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,   _______,  _______
   )
 };

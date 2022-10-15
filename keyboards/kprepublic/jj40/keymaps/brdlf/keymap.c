@@ -99,7 +99,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_RAISE] = LAYOUT_ortho_4x12(
-  KC_GRV,        KC_BSLS,       KC_NO,        KC_LBRC,       KC_RBRC,       KC_NO,   KC_NO,         KC_PGUP, KC_HOME,      KC_PGDOWN, KC_NO,          KC_PSCREEN         ,
+  KC_GRV,        KC_BSLS,       KC_NO,        KC_LBRC,       KC_RBRC,       KC_NO,   KC_NO,         KC_PGUP, KC_HOME,      KC_PGDN,   KC_NO,          KC_PSCR            ,
   LSFT(KC_BSLS), LSFT(KC_MINS), KC_EQL,       LSFT(KC_9),    LSFT(KC_0),    KC_NO,   KC_NO,         KC_HOME, KC_UP,        KC_END,    KC_NO,          LCTL(LSFT(KC_EQL)) ,
   LSFT(KC_GRV),  KC_MINS,       LSFT(KC_EQL), LSFT(KC_LBRC), LSFT(KC_RBRC), KC_NO,   LCTL(KC_LEFT), KC_LEFT, KC_DOWN,      KC_RIGHT,  LCTL(KC_RIGHT), LCTL(KC_MINS)      ,
   _______,       _______,       _______,      _______,       _______,       KC_SPC,  LCTL(KC_BSPC), _______, LCTL(KC_DEL), _______,   _______,        _______
@@ -153,7 +153,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_NUMPAD] = LAYOUT_ortho_4x12(
-    _______, _______, _______, _______, _______, _______, KC_NLCK, KC_7, KC_8,      KC_9,    KC_KP_SLASH,    _______        ,
+    _______, _______, _______, _______, _______, _______, KC_NUM,  KC_7, KC_8,      KC_9,    KC_KP_SLASH,    _______        ,
     _______, _______, _______, _______, _______, _______, _______, KC_4, KC_5,      KC_6,    KC_KP_ASTERISK, _______        ,
     _______, _______, _______, _______, _______, _______, _______, KC_1, KC_2,      KC_3,    KC_KP_PLUS,     KC_KP_MINUS    ,
     _______, _______, _______, _______, _______, _______, _______, KC_0, KC_KP_DOT, KC_COMM, _______,        _______

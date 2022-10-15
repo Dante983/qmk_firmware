@@ -69,9 +69,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        */
     [_ALPHA] = LAYOUT(
                                                                                 _______,                   _______,
-        _______, KC_MPRV, KC_MPLY, KC_MNXT, _______, KC_NLCK, KC_MINS, KC_PGUP, KC_UP,   KC_PGDN, KC_TILD, KC_DEL,
+        _______, KC_MPRV, KC_MPLY, KC_MNXT, _______, KC_NUM,  KC_MINS, KC_PGUP, KC_UP,   KC_PGDN, KC_TILD, KC_DEL,
         _______, _______, KC_VOLD, KC_VOLU, _______, KC_CAPS, KC_HOME, KC_LEFT, KC_DOWN, KC_RIGHT,KC_GRV,  KC_BSLS,
-        _______, _______, _______, _______, _______, KC_SLCK, KC_END,  KC_EQL,  KC_LBRC, KC_RBRC, KC_LPRN ,KC_RPRN,
+        _______, _______, _______, _______, _______, KC_SCRL, KC_END,  KC_EQL,  KC_LBRC, KC_RBRC, KC_LPRN ,KC_RPRN,
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
     ),
 
@@ -143,7 +143,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                         (new_time[4]) * 10 + (new_time[5])
                 );
                 for (int i = 0; i < 6; i++) {
-                    tap_code(KC_BSPACE);
+                    tap_code(KC_BACKSPACE);
                 }
             }
         }

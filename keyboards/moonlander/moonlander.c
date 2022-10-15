@@ -174,7 +174,7 @@ layer_state_t layer_state_set_kb(layer_state_t state) {
 
 #ifdef RGB_MATRIX_ENABLE
 // clang-format off
-const is31_led PROGMEM g_is31_leds[DRIVER_LED_TOTAL] = {
+const is31_led PROGMEM g_is31_leds[RGB_MATRIX_LED_COUNT] = {
 /* Refer to IS31 manual for these locations
  *   driver
  *   |  R location
@@ -370,12 +370,8 @@ const uint8_t music_map[MATRIX_ROWS][MATRIX_COLS] = LAYOUT_moonlander(
 #endif
 
 #ifdef CAPS_LOCK_STATUS
-bool led_update_kb(led_t led_state) {
-    bool res = led_update_user(led_state);
-    if(res) {
-        ML_LED_6(led_state.caps_lock);
-    }
-    return res;
+void led_update_ports(led_t led_state) {
+    ML_LED_6(led_state.caps_lock);
 }
 #endif
 

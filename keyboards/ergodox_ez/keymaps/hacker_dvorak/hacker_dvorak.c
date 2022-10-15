@@ -31,7 +31,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
          //------------------------+-------------------------+-------------------------+-------------------------+-------------------------+-------------------------+------------------------//
         //         LAYERS SWITCHER | APPLICATION MENU        |                         |                         |                        //
         //                         |                         |                         |                         |                  SCROLL //
-                 TG(LAYERS),                 KC_APP,                  KC_NLCK,                  KC_SLCK,                   KC_CAPS,        //
+                 TG(LAYERS),                 KC_APP,                  KC_NUM,                   KC_SCRL,                   KC_CAPS,        //
         //                         |                         |                         |                         |                  NUM    //
         //            LAYER TOGGLE |                         |                         |                         |       TAP DANCE: CAPS   //
          //------------------------+-------------------------+-------------------------+-------------------------+------------------------//
@@ -87,7 +87,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
          //------------------------+-------------------------+-------------------------+-------------------------+-------------------------+-------------------------+------------------------//
                                                              //                        |                         |                         |                         |                         //
                                                             //                         |                         |                         |                         |                         //
-                                                                      KC_LEFT,                   KC_UP,                    KC_DOWN,                 KC_RGHT,                  KC_SYSREQ,       //
+                                                                      KC_LEFT,                   KC_UP,                    KC_DOWN,                 KC_RGHT,                  KC_SYRQ,         //
                                                             //                         |                         |                         |                         |                         //
                                                             //                         |                         |                         |                         |                         //
                                                              //------------------------+-------------------------+-------------------------+-------------------------+------------------------//
@@ -121,11 +121,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         XXXXXXX,    XXXXXXX,       KC_MS_BTN2, KC_MS_UP,   KC_MS_BTN1,  KC_MS_BTN3, GUI_T(KC_NO),
         KC_ESC,     KC_MS_BTN4,    KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT, KC_MS_BTN5, PV_NUM,
         KC_TAB,     PV_LS,         PV_LT,      PV_LP,      PV_LH,       PV_STAR,
-        KC_CLCK,    PV_LS,         PV_LK,      PV_LW,      PV_LR,       PV_STAR,    PV_STAR,
+        KC_CAPS,    PV_LS,         PV_LK,      PV_LW,      PV_LR,       PV_STAR,    PV_STAR,
         XXXXXXX, TG(LAYERS), PV_NUM,     PV_NUM,     PV_NUM,
 
         // left thumb
-              KC_SPACE, KC_BSPACE,
+              KC_SPACE, KC_BSPC,
                         KC_HOME,
         PV_A, PV_O,     KC_END,
 
@@ -139,7 +139,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         // right thumb
         KC_DELETE, KC_ENTER,
         KC_PGUP,
-        KC_PGDOWN, PV_E,     PV_U
+        KC_PGDN, PV_E,     PV_U
     ),
 
     [GAMING] = LAYOUT_ergodox(
@@ -151,9 +151,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         XXXXXXX,           TG(LAYERS),  KC_COMM, KC_DOT, KC_LBRC,
 
         // left thumb
-                   MO(MEDIA_FN), KC_NLCK,
+                   MO(MEDIA_FN), KC_NUM,
                                  KC_SCLN,
-         KC_SPACE, KC_ENTER,     KC_BSPACE,
+         KC_SPACE, KC_ENTER,     KC_BSPC,
 
         // right hand
         KC_QUOT,       KC_Y,       KC_K,        KC_U,        KC_KP_7, KC_KP_8,  KC_KP_9,
@@ -179,19 +179,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         // left thumb
                   XXXXXXX,   XXXXXXX,
                              KC_HOME,
-        KC_SPACE, KC_BSPACE, KC_END,
+        KC_SPACE, KC_BSPC,   KC_END,
 
         // right hand
         LGUI(KC_X), XXXXXXX,       LCTL(KC_X), KC_MS_WH_UP,   XXXXXXX,       XXXXXXX,        XXXXXXX,
         LGUI(KC_C), XXXXXXX,       LCTL(KC_C), KC_UP,         SCTL(KC_C),    LCTL(KC_Z),     LGUI(KC_Z),
                     KC_MS_WH_LEFT, KC_LEFT,    KC_DOWN,       KC_RIGHT,      KC_MS_WH_RIGHT, KC_APPLICATION,
         LGUI(KC_V), XXXXXXX,       LCTL(KC_V), KC_MS_WH_DOWN, SCTL(KC_V),    LCTL(KC_Y),     SGUI(KC_Z),
-        XXXXXXX,    XXXXXXX,       XXXXXXX,    XXXXXXX,       KC_SLCK,
+        XXXXXXX,    XXXXXXX,       XXXXXXX,    XXXXXXX,       KC_SCRL,
 
         // right thumb
         XXXXXXX,   XXXXXXX,
         KC_PGUP,
-        KC_PGDOWN, KC_DELETE, KC_ENTER
+        KC_PGDN, KC_DELETE, KC_ENTER
     ),
 
     [MOUSE] = LAYOUT_ergodox(
@@ -200,7 +200,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         LGUI(KC_Z),    LCTL(KC_Z),    SCTL(KC_C), KC_MS_UP,      LCTL(KC_C),  KC_MS_BTN4,     LGUI(KC_C),
         KC_MS_BTN3,    KC_MS_WH_LEFT, KC_MS_LEFT, KC_MS_DOWN,    KC_MS_RIGHT, KC_MS_WH_RIGHT,
         LGUI(KC_Z),    LCTL(KC_Y),    SCTL(KC_V), KC_MS_WH_DOWN, LCTL(KC_V),  KC_MS_BTN5,     LGUI(KC_V),
-        KC_SLCK,       XXXXXXX,       XXXXXXX,    XXXXXXX,       XXXXXXX,
+        KC_SCRL,       XXXXXXX,       XXXXXXX,    XXXXXXX,       XXXXXXX,
 
         // left thumb
                     XXXXXXX,    XXXXXXX,
@@ -231,7 +231,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         // left thumb
                   XXXXXXX,   XXXXXXX,
                              KC_HOME,
-        KC_SPACE, KC_BSPACE, KC_END,
+        KC_SPACE, KC_BSPC,   KC_END,
 
         // right hand
         KC_X, KC_A, KC_B,   KC_C, KC_D,     KC_E,    KC_F,
@@ -243,7 +243,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         // right thumb
         XXXXXXX,   XXXXXXX,
         KC_PGUP,
-        KC_PGDOWN, KC_DELETE, KC_ENTER
+        KC_PGDN, KC_DELETE, KC_ENTER
     ),
 
     [LAYERS] = LAYOUT_ergodox(
@@ -278,7 +278,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_MPRV, KC_F9,         KC_F7,      KC_F5,   KC_F3,        KC_F1,   KC_WWW_HOME,
         KC_PAUS,            KC_F19,        KC_F17,     KC_F15,  KC_F13,       KC_F11,
         RGB_HUD,             XXXXXXX,       XXXXXXX,    _______, KC_F23,       KC_F21,  KC_WWW_BACK,
-        RGB_VAD,             KC_CLCK,       KC_PSCREEN, XXXXXXX, MO(FIRMWARE),
+        RGB_VAD,             KC_CAPS,       KC_PSCR,    XXXXXXX, MO(FIRMWARE),
 
         // left thumb
                  _______, XXXXXXX,

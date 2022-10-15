@@ -14,7 +14,16 @@
 #    define RGBLIGHT_LAYERS_OVERRIDE_RGB_OFF
 #    define RGBLIGHT_STARTUP_ANIMATION
 
-#    undef RGBLIGHT_ANIMATIONS
+#    undef RGBLIGHT_EFFECT_BREATHING
+#    undef RGBLIGHT_EFFECT_RAINBOW_MOOD
+#    undef RGBLIGHT_EFFECT_RAINBOW_SWIRL
+#    undef RGBLIGHT_EFFECT_SNAKE
+#    undef RGBLIGHT_EFFECT_KNIGHT
+#    undef RGBLIGHT_EFFECT_CHRISTMAS
+#    undef RGBLIGHT_EFFECT_STATIC_GRADIENT
+#    undef RGBLIGHT_EFFECT_RGB_TEST
+#    undef RGBLIGHT_EFFECT_ALTERNATING
+#    undef RGBLIGHT_EFFECT_TWINKLE
 #    define RGBLIGHT_EFFECT_BREATHING
 #    define RGBLIGHT_EFFECT_RAINBOW_MOOD
 #    define RGBLIGHT_EFFECT_RAINBOW_SWIRL
@@ -42,7 +51,7 @@
 #define SPI_DEBUG_SCAN_RATE
 
 #undef MANUFACTURER
-#define MANUFACTURER Window of Fire
+#define MANUFACTURER "Window of Fire"
 
 // Some keyboards enable BACKLIGHT_CAPS_LOCK without checking if backlight is enabled.
 // Undef as appropriate to avoid compiler warnings in that case.

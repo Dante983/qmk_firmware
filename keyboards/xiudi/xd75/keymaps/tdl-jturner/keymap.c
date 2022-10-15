@@ -126,7 +126,7 @@ LT(_LYMD,KC_ESC),  KC_A  ,  KC_R  ,  KC_S  ,  KC_T  ,  KC_D  ,________  ,_______
  LAYOUT_ortho_5x15(
    ________,________,________,________,________,________,___XX___,___XX___,___XX___,___XX___,___XX___,___XX___,___XX___,___XX___,___XX___,
    KC_LYDEF,________,________,________,________,________,___XX___,___XX___,___XX___,___XX___,KC_HOME ,KC_UP   ,KC_PGUP ,KC_PSCR ,________,
-   ________,________,________,________,________,________,___XX___,___XX___,___XX___,___XX___,KC_LEFT ,KC_F5   ,KC_RIGHT,KC_SLCK ,___XX___,
+   ________,________,________,________,________,________,___XX___,___XX___,___XX___,___XX___,KC_LEFT ,KC_F5   ,KC_RIGHT,KC_SCRL ,___XX___,
    ________,________,________,________,________,________,___XX___,___XX___,___XX___,___XX___,KC_END  ,KC_DOWN ,KC_PGDN ,KC_PAUS ,___XX___,
    ________,________,________,________,________,________,________,________,________,________,________,KC_INS  ,KC_DEL  ,___XX___,___XX___
  ),
@@ -265,14 +265,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             else {
               unregister_code(KC_RSHIFT);
             }
-          register_code(KC_BSLASH);
+          register_code(KC_BACKSLASH);
         }
         else {
           register_code(KC_SLSH);
         }
       }
       else {
-        unregister_code(KC_BSLASH);
+        unregister_code(KC_BACKSLASH);
         unregister_code (KC_SLSH);
       }
       return false;
