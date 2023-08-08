@@ -6,6 +6,8 @@ This particular [build](https://www.youtube.com/watch?v=x_57ObEjLqQ) for Sofle i
 
 You can change `OLED_TITLE_PRIMARY` and `OLED_TITLE_SECONDARY` in `config.h` to change the title labels. You can put something like "Name's" "Sofle" there.
 
+`config.h` was also appended with LED animations. Feel free to comment the LGB and OLED attributes out. 
+
 Ready to dive into the Wired ?
 
 HELL0 NAVI provides interactive animations for both sides :
@@ -118,9 +120,3 @@ Boot and gliches can be commented in config.h
 // boot sequence
 //#define WITH_BOOT
 ```
-
-![My Navi](https://imgur.com/eYkgoZJ.png)
-> Keyboard : https://github.com/kata0510/Lily58
-> 
-> Case : https://github.com/BoardSodie/Lily58-Acrylic-Case
-
