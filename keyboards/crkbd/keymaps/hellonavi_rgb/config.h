@@ -55,13 +55,29 @@
     #define RGB_MATRIX_SAT_STEP 8
     #define RGB_MATRIX_VAL_STEP 8
     #define RGB_MATRIX_SPD_STEP 10
-    
-    #ifdef RGB_MATRIX_CUSTOM_USER 
+
+    // Custom effects
+    #ifdef RGB_MATRIX_CUSTOM_USER
        #define ENABLE_RGB_MATRIX_STARRY_NIGHT
     #endif
-    
+
+    // Built-in reactive wave/ripple effects (these work reliably!)
+    #define ENABLE_RGB_MATRIX_SPLASH              // Rainbow ripple from keypress
+    #define ENABLE_RGB_MATRIX_MULTISPLASH         // Multiple rainbow ripples
+    #define ENABLE_RGB_MATRIX_SOLID_SPLASH        // Single color ripple from keypress
+    #define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH   // Multiple single color ripples
+    #define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
+    #define ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE
+    #define ENABLE_RGB_MATRIX_SOLID_REACTIVE_CROSS
+
+    // Some nice base effects too
+    #define ENABLE_RGB_MATRIX_BREATHING
+    #define ENABLE_RGB_MATRIX_CYCLE_ALL
+    #define ENABLE_RGB_MATRIX_RAINBOW_MOVING_CHEVRON
+
     #define RGB_MATRIX_DEFAULT_ON true
-    #define RGB_MATRIX_DEFAULT_MODE RGB_MATRIX_CUSTOM_STARRY_NIGHT
+    // Use SPLASH for wave effect on keypress (rainbow ripples!)
+    #define RGB_MATRIX_DEFAULT_MODE RGB_MATRIX_SPLASH
 #endif
 
 // no debug or trace

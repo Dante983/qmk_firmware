@@ -7,7 +7,6 @@
 #define LAYER_NAME_0 "ABC"
 #define LAYER_NAME_1 "NUM"
 #define LAYER_NAME_2 "SYM"
-#define LAYER_NAME_3 "FUN"
 
 enum layer_number { _QWERTY = 0, _LOWER, _RAISE };
 

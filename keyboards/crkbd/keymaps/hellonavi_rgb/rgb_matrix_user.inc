@@ -1,3 +1,6 @@
+// ============================================================================
+//    STARRY NIGHT EFFECT - Digital rain with reactive heatmap
+// ============================================================================
 #if defined(RGB_MATRIX_FRAMEBUFFER_EFFECTS) && defined(ENABLE_RGB_MATRIX_STARRY_NIGHT)
 RGB_MATRIX_EFFECT(STARRY_NIGHT)
 #ifdef RGB_MATRIX_CUSTOM_EFFECT_IMPLS
@@ -55,7 +58,7 @@ void set_color_val_cap_to_rgb(uint8_t index, RGB rgb, uint8_t max_intensity) {
     }
 
     // Scale uniformly
-    
+
     float scale = (float)max_intensity / (float)max_value;
     uint8_t r = (uint8_t) ((float)rgb.r * scale);
     uint8_t g = (uint8_t) ((float)rgb.g * scale);
@@ -195,14 +198,14 @@ bool STARRY_NIGHT(effect_params_t* params) {
             // If the key was just pressed, add TAP heat to previously applied heat
             if (matrix_is_on(row, col)) {
                 if (prev_starry_pressed[row][col]){
-                    starry_heatmap_increase(row, col, 
+                    starry_heatmap_increase(row, col,
                            RGB_MATRIX_STARRY_NIGHT_INCREASE_HOLD,
-                           RGB_MATRIX_STARRY_NIGHT_INCREASE_HOLD_NEAR);                      
+                           RGB_MATRIX_STARRY_NIGHT_INCREASE_HOLD_NEAR);
                 } else {
-                    starry_heatmap_increase(row, col, 
+                    starry_heatmap_increase(row, col,
                            RGB_MATRIX_STARRY_NIGHT_INCREASE_TAP+RGB_MATRIX_STARRY_NIGHT_INCREASE_HOLD,
                            RGB_MATRIX_STARRY_NIGHT_INCREASE_TAP_NEAR+RGB_MATRIX_STARRY_NIGHT_INCREASE_HOLD_NEAR);
-                }                                            
+                }
             }
 
 

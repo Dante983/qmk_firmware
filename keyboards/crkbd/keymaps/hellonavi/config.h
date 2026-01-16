@@ -45,7 +45,9 @@
 #define LAYER_STATE_8BIT
 
 // possible fix for kbd now working after cold reboot
-#define USB_SUSPEND_WAKEUP_DELAY 5000
+// #define USB_SUSPEND_WAKEUP_DELAY 5000
+// #define SPLIT_USB_DETECT
+#define SPLIT_USB_TIMEOUT 2000
 
 // no debug or trace
 #ifndef NO_DEBUG
